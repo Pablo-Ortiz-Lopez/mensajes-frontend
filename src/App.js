@@ -15,6 +15,7 @@ import Login from './components/Login/Login'
 import Register from './components/Register/Register'
 import { credentials, logout } from './api/users'
 import Messages from './components/messages/messages'
+import { API } from './constants'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props
@@ -54,6 +55,8 @@ function App() {
     })()
   }, [])
 
+  console.log(process.env.NODE_ENV)
+  console.log(API)
   const doLogOut = async () => {
     await logout()
     setAuth(null)
