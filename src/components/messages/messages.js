@@ -218,10 +218,6 @@ const Messages = () => {
                             type="button"
                             className="button-block"
                             onClick={async () => {
-                              console.log({
-                                // eslint-disable-next-line no-underscore-dangle
-                                _id: message._id,
-                              })
                               await deleteMessage({
                                 // eslint-disable-next-line no-underscore-dangle
                                 _id: message._id,
