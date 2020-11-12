@@ -18,7 +18,6 @@ import Messages from './components/messages/messages'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props
-
   return (
     <div
       role="tabpanel"
