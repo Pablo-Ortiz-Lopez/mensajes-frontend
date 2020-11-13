@@ -2,6 +2,7 @@
   "name": "mensajes-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@imaginary-cloud/eslint-config-react": "1.0.1",
     "@material-ui/core": "^4.11.0",

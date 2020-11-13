@@ -66,8 +66,8 @@ const Messages = () => {
           <Typography
             variant="h4"
             style={{
-              padding: '2%',
-              width: '100vw',
+              padding: '7%',
+              width: '100%',
               textAlign: 'left',
             }}
           >
@@ -140,7 +140,7 @@ const Messages = () => {
                     // eslint-disable-next-line no-underscore-dangle
                     <StyledTableRow key={message._id}>
                       <StyledTableCell component="th" scope="row">
-                        {messages.length - index + 1}
+                        {messages.length - index}
                       </StyledTableCell>
                       {/* eslint-disable-next-line no-underscore-dangle */}
                       {updating === message._id ? (
