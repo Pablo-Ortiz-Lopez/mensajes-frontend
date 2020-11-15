@@ -63,7 +63,7 @@ const Login = ({ onLogin }) => {
               >
                 Submit
               </Button>
-              {error && <Typography style={{ color: 'red' }}>Error</Typography>}
+              {error && <Typography className="error">Error</Typography>}
             </Grid>
           </Grid>
         </form>

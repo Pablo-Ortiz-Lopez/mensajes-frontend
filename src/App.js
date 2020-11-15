@@ -102,7 +102,7 @@ function App() {
       {auth && (
         <>
           <AppBar position="static" alignitems="center" color="primary">
-            <Toolbar style={{ padding: '2%' }}>
+            <Toolbar className="header">
               <Grid container justify="center" wrap="wrap">
                 <Grid item>
                   <Typography variant="h6">

@@ -19,6 +19,7 @@ import {
   updateMessage,
   postMessage,
 } from '../../api/messages'
+import './messages.css'
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -63,16 +64,7 @@ const Messages = () => {
     <>
       <Grid container justify="flex-start">
         <Grid item>
-          <Typography
-            variant="h4"
-            style={{
-              padding: '7%',
-              width: '100%',
-              textAlign: 'left',
-            }}
-          >
-            Your messages
-          </Typography>
+          <Typography variant="h4">Your messages</Typography>
         </Grid>
       </Grid>
 
@@ -83,16 +75,16 @@ const Messages = () => {
               <TableHead>
                 <TableRow>
                   <StyledTableCell>Message #</StyledTableCell>
-                  <StyledTableCell align="right">
+                  <StyledTableCell align="left">
                     Original message
                   </StyledTableCell>
-                  <StyledTableCell align="right">
+                  <StyledTableCell align="left">
                     Encrypted message
                   </StyledTableCell>
-                  <StyledTableCell align="right">
+                  <StyledTableCell align="left">
                     Original message CRC
                   </StyledTableCell>
-                  <StyledTableCell align="right" />
+                  <StyledTableCell align="left" />
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -157,13 +149,7 @@ const Messages = () => {
                           />
                         </StyledTableCell>
                       ) : (
-                        <StyledTableCell
-                          align="center"
-                          style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                          }}
-                        >
+                        <StyledTableCell align="center" className="edit-cell">
                           <Typography
                             style={{ padding: '2%', textAlign: 'left' }}
                           >
