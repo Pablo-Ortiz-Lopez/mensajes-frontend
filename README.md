@@ -13,7 +13,7 @@ To use this App Locally, you need to have:
 * `npm` or (preferably) `yarn` installed on your machine. 
 * The `mensajes-api` REST API running locally in your machine.
 
-### How to run
+### How to run
 
 To run the app, first you will need to install dependencies, executing either `npm install` or `yarn install` depending on your preferred package manager.
 
