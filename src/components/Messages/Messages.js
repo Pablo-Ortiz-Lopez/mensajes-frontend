@@ -41,7 +41,8 @@ const StyledTableRow = withStyles((theme) => ({
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 700,
+    width: '50vw',
+    minWidth: 900,
   },
 })
 
@@ -149,18 +150,21 @@ const Messages = () => {
                           />
                         </StyledTableCell>
                       ) : (
-                        <StyledTableCell align="center" className="edit-cell">
-                          <Typography
-                            style={{ padding: '2%', textAlign: 'left' }}
-                          >
+                        <StyledTableCell
+                          align="center"
+                          style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                          }}
+                        >
+                          <Typography className="decoded">
                             {message.decoded}
                           </Typography>
                           <Button
                             variant="contained"
                             color="primary"
                             type="button"
-                            className="button-block"
-                            style={{ width: '20%' }}
+                            className="button-block edit-button"
                             onClick={() => {
                               setUpdatedMessage(message.decoded)
                               // eslint-disable-next-line no-underscore-dangle

@@ -20,3 +20,11 @@ To run the app, first you will need to install dependencies, executing either `n
 Then, simply execute  `npm start` or `yarn start`.
 
 The app will open in your default browser automatically.
+
+## Build the app
+
+You can also build the app to serve it statically in a server. 
+
+In production mode, the App is configured to use the deployed API at `https://parkink.cat:3000` . You can change that before building in the  `src/constants.js` file.
+
+To build it, run `yarn run build` , and find the built App in the `build` folder.
