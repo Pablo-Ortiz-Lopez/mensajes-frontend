@@ -2,8 +2,6 @@
 
 This is a simple React App which serves the sole purpose of using the Mensajes API in an effortless manner.
 
-You can either run the app locally, or use the deployed version on [my personal VPS](https://parkink.cat/mensajes) , which can be used directly.
-
 ## Running locally
 
 ### Requisites
